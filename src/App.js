@@ -8,25 +8,36 @@ import Home from './views/Home';
 import More from './views/More';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentLink:''
+    }
+  }
+  componentDidMount () {
+    
+      console.log(this);
+  }
   render() {
+    const { currentLink } = this.props;
     return (
       <Router>
-      <div className="App">
-        <header className="App-header">
-          <div className="col-lg-12">
-            <ul className="list-inline">
-                <li className="list-inline-item"><Link to={'/'}>Home</Link></li>
-                <li className="list-inline-item"><Link to={'/More'}>More</Link></li>
-            </ul>
-          </div>     
-        </header>
-        <div className="App-content">
-          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route exact path='/More' component={More} />
-          </Switch>
+        <div className="App">
+          <header className="App-header">
+            <div className="col-lg-12">
+              <ul className="list-inline">
+                  <li className="list-inline-item"><Link to={'/'}>Home</Link></li>
+                  <li className="list-inline-item"><Link to={'/More'}>More</Link></li>
+              </ul>
+            </div>     
+          </header>
+          <div className="App-content">
+            <Switch>
+              <Route exact path='/' component={Home} />
+              <Route exact path='/More' component={More} />
+            </Switch>
+          </div>
         </div>
-      </div>
       </Router>
     );
   }

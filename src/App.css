@@ -38,6 +38,27 @@
   font-size: large;
 }
 
+img.imageHovered
+{  
+  opacity: 0.3;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  border-radius: 12%;
+}
+
+.hidden { display:none; }
+
+.item-image .showSubElement 
+{
+  display:block;
+  left:0;
+  right: 0;
+  position: absolute;
+  top:0;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
