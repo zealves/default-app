@@ -14,10 +14,10 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <div className="col-lg-12">
-          <ul className="list-inline">
-              <li className="list-inline-item"><Link to={'/'}>Home</Link></li>
-              <li className="list-inline-item"><Link to={'/More'}>More</Link></li>
-          </ul>
+            <ul className="list-inline">
+                <li className="list-inline-item"><Link to={'/'}>Home</Link></li>
+                <li className="list-inline-item"><Link to={'/More'}>More</Link></li>
+            </ul>
           </div>     
         </header>
         <div className="App-content">

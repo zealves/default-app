@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import Image from '../components/Image/Image';
+import ScrollEvent from 'react-onscroll';
 
 export default class Home extends Component
 {
+    handleScrollCallback = () => {
+        console.log('handleScrollCallback');
+    }
     render() {
         return (
             <div>
-                <h1>Home</h1>
+                <h1>Home</h1> <ScrollEvent handleScrollCallback={this.handleScrollCallback} />
                 <div className="col-lg-12">
                     <div className="row">
                         <div className="col-lg-6">
