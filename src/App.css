@@ -49,14 +49,10 @@ img.imageHovered
 }
 
 .hidden { display:none; }
-
+.show { display:block; }
 .item-image .showSubElement 
 {
   display:block;
-  left:0;
-  right: 0;
-  position: absolute;
-  top:0;
 }
 
 @keyframes App-logo-spin {
